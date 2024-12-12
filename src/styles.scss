@@ -1,0 +1,141 @@
+html,
+body,
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: arial;
+    font-size: 16px;
+}
+
+.requests {
+    height: 100%;
+    display: grid;
+    grid-template-columns: calc(50% - 8px) calc(50% - 8px);
+    grid-template-rows: calc(50% - 8px) calc(50% - 8px);
+    gap: 16px;
+    padding: 16px;
+    max-height: 100%;
+}
+
+.request-card {
+    background-color: whitesmoke;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+.header {
+    padding-bottom: 16px;
+    border-bottom: 10px solid lightgray;
+    display: flex;
+    align-items: center;
+    .method {
+    padding: 8px;
+    margin-right: 16px;
+    width: fit-content;
+    border-radius: 8px;
+    color: white;
+}
+
+.GET {
+    background-color: lightseagreen;
+}
+
+.POST {
+    background-color: orange;
+}
+
+.url {
+    max-width: 100%;
+    overflow-inline: auto;
+}
+
+.run {
+    outline: none;
+    padding: 8px;
+    margin-left: auto;
+
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+.run:hover {
+    background-color: darkgreen;
+    border: 2px solid darkgreen;
+}
+
+.run:active {
+    background-color: white;
+    color: darkgreen;
+}
+}
+
+.properties {
+
+    margin-top: 16px;
+
+    .title {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: min-content auto;
+        gap: 8px;
+        align-items: center;
+
+        /*.property-name {}*/
+
+        .property-value {
+            outline: none;
+            padding: 8px;
+            border: 2px solid lightgray;
+
+            font-size: inherit;
+            font-family: inherit;
+        }
+    }
+}
+
+.output {
+    margin-top: 16px;
+    border-top: 2px solid lightgray;
+    padding-top: 16px;
+
+    .title {
+        margin-bottom: 8px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .status {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+    }
+
+    .response {
+        font-style: italic;
+    }
+
+    .empty {
+        color: gray;
+    }
+}
+
+    .no-border {
+        border: none;
+        margin-top: 0;
+    }
+
+}
